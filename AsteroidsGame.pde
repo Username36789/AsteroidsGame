@@ -19,8 +19,8 @@ public void draw() {
   background(0);
 
   // Display stars
-  for (Star s : stars) {
-    s.show();
+  for (int i = 0; i < stars.length; i++) {
+    stars[i].show();
   }
 
   // Handle smooth controls
@@ -47,7 +47,7 @@ public void keyPressed() {
   } else if (keyCode == UP) {
     accelerating = true; // Start accelerating
   } else if (key == 'h' || key == 'H') {
-    ship.hyperspace(); // Hyperspace
+    ship.hyperspace(); // Hyperspace (random position)
   }
 }
 
