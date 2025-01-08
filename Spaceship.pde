@@ -1,10 +1,4 @@
 class Spaceship extends Floater {
-  // Private members specific to the spaceship
-  private int[] xCorners; // encapsulated shape
-  private int[] yCorners;
-  private int corners; // number of corners for the shape
-  private int myColor; // spaceship color
-
   public Spaceship() {
     corners = 5;
     xCorners = new int[] {20, -10, -6, -10, 20}; // Shape of the spaceship
@@ -15,34 +9,6 @@ class Spaceship extends Floater {
     myXspeed = 0;
     myYspeed = 0;
     myPointDirection = 0; // pointing to the right
-  }
-
-  // Public getters for encapsulated members
-  public int[] getXCorners() {
-    return xCorners;
-  }
-  public int[] getYCorners() {
-    return yCorners;
-  }
-  public int getCorners() {
-    return corners;
-  }
-  public int getColor() {
-    return myColor;
-  }
-
-  // Public setters for encapsulated members
-  public void setXCorners(int[] newXCorners) {
-    xCorners = newXCorners;
-  }
-  public void setYCorners(int[] newYCorners) {
-    yCorners = newYCorners;
-  }
-  public void setCorners(int newCorners) {
-    corners = newCorners;
-  }
-  public void setColor(int newColor) {
-    myColor = newColor;
   }
 
   // Hyperspace - teleport to a random position
